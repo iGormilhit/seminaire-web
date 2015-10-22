@@ -1,0 +1,17 @@
+# Licence
+
+## Logiciels utilisés
+
+Les logiciels utilisés ont leur propre licence :
+
+  * pandoc : https://raw.githubusercontent.com/jgm/pandoc/master/COPYING (GNU GPL)
+  * pandoc-citeproc : https://raw.githubusercontent.com/jgm/pandoc-citeproc/master/LICENSE
+  * reveal.js : https://raw.githubusercontent.com/hakimel/reveal.js/master/LICENSE
+
+## L'article
+
+L'article dont il est question est bien entendu protégé : © 2015, Nick Doty. Under license to IEEE.
+
+## Ma part
+
+Pour le reste, mes notes, textes et présentation, sont sous CC-BY.
