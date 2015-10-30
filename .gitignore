@@ -8,3 +8,6 @@ Session.vim
 .netrwhist
 *~
 
+### Exclus du projets ###
+
+document-cours/
