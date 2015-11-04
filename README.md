@@ -13,7 +13,7 @@ http://dx.doi.org/10.1109/SPW.2015.18
 
 Le but de ce dépôt est d'y rassembler : 
 
-   * mes notes de lectures,
+   * mes [notes de lectures](notes/lectures.md),
    * le texte de ma présentation,
    * les slides.
 
