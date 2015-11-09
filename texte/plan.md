@@ -61,21 +61,21 @@ date: 2015-11-09
          11. Sections évaluées par *Security Directorate*
          12. quote IETF
          13. *Area Directors* et les 2 *Security Area Directors* + IESG : *reviewing*, importance de sécurité et *privacy*
-       2. IETF : de la sécurité à la *privacy*
-          1. juillet 2013, RFC 6973, recommandation pr rédaction RFCs en rapport *privacy*
+      2. IETF : de la sécurité à la *privacy*
+         1. juillet 2013, RFC 6973, recommandation pr rédaction RFCs en rapport *privacy*
             * liste menaces particulières
             * réduction de ces risques
             * *checklist* pour identifier et résoudre problèmes de *privacy*
-          2. RFC spécifiques *privacy* : ``geopriv`` WG (géolocalisation) : modèle de com. des données de géolocalisation (standard), avec exigence d'une politique claire d'utilisation des données, et contrôle par l'utilisateur.
+         2. RFC spécifiques *privacy* : ``geopriv`` WG (géolocalisation) : modèle de com. des données de géolocalisation (standard), avec exigence d'une politique claire d'utilisation des données, et contrôle par l'utilisateur.
       3. *privacy* dans standards du **W3C**
-          1. Pas d'exigences spécifiques comme IETF, mais nombre plus stable, env. 20%
-          2. fig3 : % de TR mentionnant au moins 1x le terme
-          3. P3P, DNT
-          4. *reviewing for privacy* au W3C, méthode
+         1. Pas d'exigences spécifiques comme IETF, mais nombre plus stable, env. 20%
+         2. fig3 : % de TR mentionnant au moins 1x le terme
+         3. P3P, DNT
+         4. *reviewing for privacy* au W3C, méthode
       4. Réactions à Snowden
       5. Tendances
    5. Importances résultats et conclusions
-       1. ?
+      1. ?
    6. Critique
       1. Utilisation plus visible des données quantitatives
       2. Utilisation plus visible des entretiens semi-structurés
