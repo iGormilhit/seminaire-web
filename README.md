@@ -18,3 +18,14 @@ Le but de ce dépôt est d'y rassembler :
    * les slides.
 
 Le tout, si possible, en *MarkDown*, avec des conversions en PDF, ePub et html via *pandoc*.
+
+## Slides
+
+Pour la partie *slides*, il faut copier le dépôts ``reveal.js`` dans le dossier ``slides``, par exemple :
+
+   $ cd slides
+   $ git clone https://github.com/hakimel/reveal.js.git
+
+Pour générer les slides en ``html`` avec pandoc :
+
+   $ pandoc -s -t revealjs -o slides.html5 slides.md
