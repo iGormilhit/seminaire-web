@@ -21,15 +21,14 @@ Le tout, si possible, en *MarkDown*, avec des conversions en PDF, ePub et html v
 
 ## Slides
 
-Pour la partie *slides*, il faut copier le dépôts ``reveal.js`` dans le dossier ``slides``, par exemple :
+Pour la partie *slides*, il faut copier le dépôts ``reveal.js``:
 
 ```bash
-$ cd slides
 $ git clone https://github.com/hakimel/reveal.js.git
 ```
 
 Pour générer les slides en ``html`` avec pandoc :
 
 ```bash
-$ pandoc -s -t revealjs -o slides.html slides.md
+$ pandoc -s -t revealjs -V slideNumber=true -o index.html slides.md
 ```
