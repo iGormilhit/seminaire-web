@@ -13,8 +13,8 @@ http://dx.doi.org/10.1109/SPW.2015.18
 
 Le but de ce dépôt est d'y rassembler : 
 
-   * mes [notes de lectures](notes/lecture.md),
-   * le texte de ma présentation,
+   * mes [notes de lectures](notes/lecture.md), [structure](notes/structure.md) du texte.
+   * le texte de ma présentation (*well, maybe*),
    * les slides.
 
 Le tout, si possible, en *MarkDown*, avec des conversions en PDF, ePub et html via *pandoc*.
