@@ -96,14 +96,14 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 * Actualités de médias de masse, rapports, standards en réaction à Snowden (*timeline*)
 * Entretiens semi-structurés
 
-## RFCs
+## RFC
 
 * historique complet depuis 1969
 * *privacy* : notion transversale comme a11y, i18n, *sécurité*
 * standards par *couches* → déterminismes des couches de bases
 * méthode : *parsing* du *plain-text*, repérage des sections, nbre de ligne, rapport longueur RFC / longueur section sécurité ou *privacy*
 
-## TRs
+## TR
 
 * historique plus récent, 1996
 * analyse le % de TRs mentionnant au moins 1x le terme
@@ -114,13 +114,13 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ![figure 1](figures/fig-1.gif)
 
-## Historique des RFCs
+## Historique des RFC
 
 * [RFC 1543](http://tools.ietf.org/html/rfc1543), 1993, *Instructions for RFC authors*
 
 > All RFCs are required to have a Security considerations section. Historically, such sections have been relatively weak ([RFC 3552](http://tools.ietf.org/html/rfc3552))
 
-## Historique des RFCs
+## Historique des RFC
 
 * 1996, une RFC signale que les sections sont trop courtes
 * *sécurité* quasi absentes avant 90s, existantes mais brèves ensuite
@@ -131,13 +131,13 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ![figure 2](figures/fig-2.gif)
 
-## Historique des RFCs
+## Historique des RFC
 
 * Introduction d'un modèle, avec une section *Security Considerations*
 * Outil de validation
 * Sections évaluées par le *Security Directorate*
 
-## Historique des RFCs
+## Historique des RFC
 
 > Now everyone [thinks about security]. Not everyone does, but as soon as you don't, you get called out. (entretiens semi-structurés)
 
@@ -148,7 +148,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ## Sécurité → *privacy*
 
-* juillet 2013, [FRC 6973](http://tools.ietf.org/html/rfc6973)
+* juillet 2013, [RFC 6973](http://tools.ietf.org/html/rfc6973)
 * demande de faire la liste des menaces
 * description des mesures de réduction des risques
 * propose *checklist* pour identifier et résoudre les problèmes
@@ -163,14 +163,14 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ## La *privacy* dans les standards du W3C
 
-* les TRs sont publiques → analysables
+* les TRs sont publics → analysables
 * pas d'exigence spécifiques comme à l'IETF
 * un nombre de TRs mentionnant les termes plus stables
-* relativement nombreuses (~ 20 %)
+* relativement nombreux (~ 20 %)
 
 ##
 
-![figure 3](figures/fig-2.gif)
+![figure 3](figures/fig-3.gif)
 
 ## La *privacy* dans les standards du W3C
 
@@ -223,7 +223,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 ## Révélations Snowden
 
 * juin 2013, articles de Greenwald
-* section 215, collection des métadonnées téléphonique
+* section 215, collection des métadonnées téléphoniques
 * accès ``Prism`` aux serveurs des grandes compagnies technologiques
 * programmes ``XKeyscore`` et ``Bullrun`` (chiffrement)
 * insertion de vulnérabilité dans le développement de standards de chiffrement au NIST
