@@ -20,6 +20,6 @@ date: 2015-11-09
 │   ├── A. Systematization 
 │   ├── B. Integrating Privacy and Security 
 │   └── C. Leadership 
-├── VI. Future Work 
+└── VI. Future Work 
 ```
 
