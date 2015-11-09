@@ -1,26 +1,8 @@
 ---
 title: Notes de lecture
 author: iGor
-date: 2015-11-22
+date: 2015-10-22
 ---
-
-# Structure de l'article
-
-```
-├── I. Introduction
-├── II. Method
-│   ├── A. Data Sources
-│   └── B. Scope
-├── III. History of Privacy and Security Reviews
-│   ├── A. IETF
-│   └── B. W3C
-├── IV. Reactions to Snowden
-├── V. Trends
-│   ├── A. Systematization 
-│   ├── B. Integrating Privacy and Security 
-│   └── C. Leadership 
-├── VI. Future Work 
-```
 
 # Définitions
 
@@ -95,7 +77,7 @@ Ne suppose pas une def. de *privacy*, mais : protection contre l'intrusion, immi
 
 Centré sur deux orgs définissant des standards :
 
-   * [Internet Engineering Task Force](http://www.ietf.org/) (IETF)
+   * [Internet Engineering Task Force](http://www.ietf.org/)(IETF)
    * World Wide Web Consortium (W3C)
 
 Les deux incontournables pour les protocols Internet et Web et sur model volontaire et concensus → pas de limite précise sur où se définissent les standards. Ex HTML5 et le WHATWG ([Web Hypertext Application Technology Working Group](https://whatwg.org/)), groupe de vendeurs de navigateurs. En collaboration ou non avec le W3C.
@@ -131,7 +113,7 @@ Mentionne [RFC 3552](https://tools.ietf.org/html/rfc3552), 2003, *Guidelines for
 
 En 1996, une RFCs signale que les sections sur la sécurité ne sont pas si nombreuses et surtout très brèves...
 
-**L'analyse textuelle automatique** [on aurait aimé une courte description] confirme, voir [fig 2](figures/fig-2.gif). La légende de la figure explique un peu le type d'analyse : *parse* le *plain-text*, repère les sections, et le nombre de ligne à largeur fixe, puis calcul d'un rapport entre la longueur de la RFC et la longueur de la partie "sécurité".
+**L'analyse textuelle automatique** [on aurait aimé une courte description] confirme, voir [fig2](figures/fig-2.gif). La légende de la figure explique un peu le type d'analyse : *parse* le *plain-text*, repère les sections, et le nombre de ligne à largeur fixe, puis calcul d'un rapport entre la longueur de la RFC et la longueur de la partie "sécurité".
 
 Considérations sécurité quasi absentes avant 90, très brèves au cours des 90. Depuis 2000, les sections se ralongent quelque peu, une plus grande proportion de chaque RFC, mais la plupart des sections restent minimalistes. La longueur des sections sécurité ne garantissent pas qualité sécurité, mais bonne mesure de l'attention portée au sujet.
 
@@ -166,7 +148,7 @@ Le fait que ces préoccupations s'appliquent à des domaines de types applicatif
 
 IETF : RFCs. Pour le W3C, ce sont des TRs pour [*Technical Reports*](http://www.w3.org/TR/).
 
-W3C publie aussi standards techniques, en accès libre → analysables. Pas d'exigences spécifiques comme au IETF, mais un nombre plus stable, et relativement important (envir. 20 %), voir [fig 4](figures/fig-4.gif). Le graph montre le pourcentage de TR qui mentionne au moins une fois le terme recherché.
+W3C publie aussi standards techniques, en accès libre → analysables. Pas d'exigences spécifiques comme au IETF, mais un nombre plus stable, et relativement important (envir. 20 %), voir [fig3](figures/fig-3.gif). Le graph montre le pourcentage de TR qui mentionne au moins une fois le terme recherché.
 
 ### Standards spécifiques sur la *privacy*
 
@@ -227,7 +209,7 @@ Un fort "hum" de soutien, et un silence en matière d'opposition → consensus c
 
 Des individus ont également formé des groupes en réponses. ``XKeyscore`` a été publié en même temps que le IETF *meeting* à Berlin. Un groupe informel s'est rencontré là, a démarré la *mailing list* ``perpass``, forme la plus basique d'orga. à IETF, et une rencontre *BoF* (*birds of a feather*, qui a pour but de mettre en place une activité plus formelle), et un atelier (par IAB -- *Internet Architecture Board* -- et W3C) pour travailler sur le renforcement d'Internet contre la surveillance intrusive.
 
-[fig 4](figures/fig-4.gif) -- Stats d'une *mailing list* : aperçu *grossier* sur le niveau d'activité d'une communauté. La liste ``perpass`` (orange) montre une grande activité en fin 2013, en comparaison avec les autres listes. Montre que cette conversation auto-organisée démarre après les révélations Snowden et devient très active après la publication des articles sur ``XKeyscore`` et ``Bullrun`` qui décrivent des attaques spécifiques contre l'infrastructure d'Internet. Les sujets abordés dans la liste :
+[fig4](figures/fig-4.gif) -- Stats d'une *mailing list* : aperçu *grossier* sur le niveau d'activité d'une communauté. La liste ``perpass`` (orange) montre une grande activité en fin 2013, en comparaison avec les autres listes. Montre que cette conversation auto-organisée démarre après les révélations Snowden et devient très active après la publication des articles sur ``XKeyscore`` et ``Bullrun`` qui décrivent des attaques spécifiques contre l'infrastructure d'Internet. Les sujets abordés dans la liste :
 
    * *brainstorming*
    * critique de proposition pour l'augmentation de l'utilisation du chiffrement
