@@ -112,7 +112,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ##
 
-![figure 1](../figures/fig-1.gif)
+![figure 1](figures/fig-1.gif)
 
 ## Historique des RFCs
 
@@ -129,7 +129,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ##
 
-![figure 2](../figures/fig-2.gif)
+![figure 2](figures/fig-2.gif)
 
 ## Historique des RFCs
 
@@ -170,7 +170,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ##
 
-![figure 3](../figures/fig-2.gif)
+![figure 3](figures/fig-2.gif)
 
 ## La *privacy* dans les standards du W3C
 
@@ -264,7 +264,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ##
 
-![figure 4](../figures/fig-4.gif)
+![figure 4](figures/fig-4.gif)
 
 ## La liste ``perpass``
 
