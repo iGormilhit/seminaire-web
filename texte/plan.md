@@ -43,24 +43,24 @@ date: 2015-11-09
          2. *essentially contested concept*
          3. Les deux orgas : centrales (même si pas de limites, i.e. WHATWG, OASIS), + accès
       3. Produit :
-          1. Historique
-          2. Réaction à Snowden
-          3. Tendances
-    4. Résultats et conclusions
-        1. Historique IETF
-            1. Historique complet RFCs depuis 1969
-            2. 1987, intro obligation aborder sécurité
-            3. → 100% RFCs pour sécurité
-            4. 20% pour *privacy*
-            5. RFC 1543 : *Instructions to RFC authors*
-            6. Mention sécurité insuffisantes durant 90s (quote, RFC 3552, 2003)
-            7. 1996, RFC signale que section sécurité pas assez nombreuses, trop courtes
-            8. Sécurité quasiment absentes avant 90s, très brèves ensuite
-            9. 2000, sections plus grandes, mais tout de même minimaliste et long != qualité
-            10. Introduction d'un modèle, avec section *Security Considerations* et outil de validation
-            11. Sections évaluées par *Security Directorate*
-            12. quote IETF
-            13. *Area Directors* et les 2 *Security Area Directors* + IESG : *reviewing*, importance de sécurité et *privacy*
+         1. Historique
+         2. Réaction à Snowden
+         3. Tendances
+   4. Résultats et conclusions
+      1. Historique IETF
+         1. Historique complet RFCs depuis 1969
+         2. 1987, intro obligation aborder sécurité
+         3. → 100% RFCs pour sécurité
+         4. 20% pour *privacy*
+         5. RFC 1543 : *Instructions to RFC authors*
+         6. Mention sécurité insuffisantes durant 90s (quote, RFC 3552, 2003)
+         7. 1996, RFC signale que section sécurité pas assez nombreuses, trop courtes
+         8. Sécurité quasiment absentes avant 90s, très brèves ensuite
+         9. 2000, sections plus grandes, mais tout de même minimaliste et long != qualité
+         10. Introduction d'un modèle, avec section *Security Considerations* et outil de validation
+         11. Sections évaluées par *Security Directorate*
+         12. quote IETF
+         13. *Area Directors* et les 2 *Security Area Directors* + IESG : *reviewing*, importance de sécurité et *privacy*
        2. IETF : de la sécurité à la *privacy*
           1. juillet 2013, RFC 6973, recommandation pr rédaction RFCs en rapport *privacy*
             * liste menaces particulières
