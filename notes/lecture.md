@@ -14,6 +14,12 @@ date: 2015-11-22
 ├── III. History of Privacy and Security Reviews
 │   ├── A. IETF
 │   └── B. W3C
+├── IV. Reactions to Snowden
+├── V. Trends
+│   ├── A. Systematization 
+│   ├── B. Integrating Privacy and Security 
+│   └── C. Leadership 
+├── VI. Future Work 
 ```
 
 # Définitions
@@ -35,7 +41,7 @@ Nick Doty :
   * bachelor en philo.
   * master en information management system
   * phD en IS
-  * privacy analyst for W3C ([Privacy Interest Group (Ping)](http://www.w3.org/Privacy/)), [Do Not Track](http://www.w3.org/TR/tracking-dnt/)
+  * privacy analyst for W3C ([Privacy Interest Group (PING)](http://www.w3.org/Privacy/)), [Do Not Track](http://www.w3.org/TR/tracking-dnt/)
 
 # Abstract
 
@@ -180,4 +186,103 @@ http://www.w3.org/TR/tracking-dnt/
 
 Effort sur plusieurs années → mécanisme offrant à l'utilisateur le choix face au *tracking* du comportement en ligne. 2010 : pris en charge par *Federal Trade Commission*. 2011 implémentés dans les navigateurs, et efforts de standardisation. L'utilisateur doit pouvoir définir dans les préférences de son navigateur s'il accorde ou non aux sites Web le *tracking*, préférence qui doit être communiqué aux services en ligne. Comme P3P, n'impose pas des propriétés type *privacy*, ne limite pas automatiquement le *tracking*. Suppose coopération entre les *users agents* et les serveurs (qui décideraient de tenir compte des préférences des utilisateurs).
 
-A été mis à jour, plus grande souplesse offerte aux serveurs d'indiquer comment ils tiennent compte des préférences des utilisateurs. Mention du *Privacy Badger* de l'EFF, qui bloque les cookies tiers s'ils n'affichent pas leur méthode DNT.
+À été mis à jour, plus grande souplesse offerte aux serveurs d'indiquer comment ils tiennent compte des préférences des utilisateurs. Mention du *Privacy Badger* de l'EFF, qui bloque les cookies tiers s'ils n'affichent pas leur méthode DNT.
+
+Autre initiative : DAA (Digital Advertising Alliance) propose sa propre méthode DNT. Mention du group de travail TPWG ([*Tracking Protection Working Group*](http://www.w3.org/2011/tracking-protection/), auquel participe l'auteur) : définit des pratiques en matière de *privacy* auxquelles les sites pourraient adhérer. → diversité des pratiques (politiques) caractéristique d'un manque de standardisation, ou standardisation si étroites (permissives) que possibilité d'une grande diversité d'implémentations.
+
+#### Évaluation de la *privacy* au W3C
+
+*Privacy* apparaît dans les spécifications de plusieurs APIs et protocols du Web qui ne concernent pas directement la *privacy*. Pas d'exigence de sections "sécurité" ou *privacy* dans les documents publiés (TRs, contrairement à RFCs), mais dans les procédures d'évaluations. Autant à IEFT que W3C, une phase "*Last Call*" ou "*wide review*" : une évalution par un public plus large, en dehors des auteurs et du groupe de travail développant la spécification. Déterminé dans la charte de chaque WG : quel autre WG devra faire des commentaires d'évaluation, souvent sur *privacy*, sécurité, a11y, i18n. Le directeur du W3C peut décider si telle spécification suit le cours normal d'évaluation ou doit être spécifiquement être analysé sur des points particuliers.
+
+Le *PING*, de manière informelle ou de type consultation, apporte son expertise, conseils sur questions de *privacy*, typiquement sur demande d'un WG. PING composé de volontaires : académiques, société civile, industrie, intéressés dans la *privacy* sur le Web. Travaillent également sur docs et procédures pour améliorer l'évaluation de la *privacy*. D'autres groupes W3C apportent leurs commentaires sur *privacy* et sécurité : TAG (*Technical Architecture Group*), *Web Application Security Working Group* et *Web Security Interest Group*.
+
+*Privacy* pas le seul sujet transversal qui a conduit a évaluer le processus de formation des standards au W3C, parfois mieux formalisés. *Internationalization Working Group* apporte conseil et évalutation dans le cadre W3C et en dehors. Idem pour la *Web Accessibility Initiative* : développe ses propres standards et offre évaluation à d'autres travaux au sein du W3C.
+
+# Réaction à Snowden
+
+Les révélations Snowden d'une surveillance gouvernementale à grande échelle des communications électroniques à profondément affecté la communauté des standards d'Internet. Les réactions ont été composées de :
+
+   * déclarations individuelles / organisations ;
+   * formations de nouveaux groupes et collaborations ;
+   * réponses directes sous forme de standards et code.
+
+Grande liste réaction, suffisamment nbreuses pour remplir plusieurs papiers, ici seulement un bref résumé centré sur ce qui impacte l'évaluation de la *privacy* et de la sécurité. Ces évaluations existaient avant Snowden. Mais événement extérieur a inspiré des réponses concrètes et a modifié pratiques des organisation élaborant standards.
+
+1^er articles de [Greenwald](https://fr.wikipedia.org/wiki/Glenn_Greenwald) en juin 2013 (en même temps que [*Privacy Law Scholars Conference in Berkley*](https://www.law.berkeley.edu/centers/bclt/past-events/2013-conferences/june-2013-privacy-law-scholars-conference/)) avec détails sur la section 215, collection des métadonnées téléphoniques et sur l'accès ``Prism`` aux serveurs des grandes compagnies techniques. Mais encore plus pertinent pour ceux qui travaillent sur la sécurité des connections Internet elles-mêmes, le programme ``XKeyscore``, révélé en juillet, et le programme ``Bullrun``, révélé en septembre, qui offrent des preuves étonnantes sur les capacités et les pratiques de la NSA en matière de surveillance de l'activité Internet, y compris le trafic chiffré. Encore plus spécific à la communauté élaborant les standards, le même article de sept. dévoile que la NSA a inséré des vulnérabilités dans la sécurité dans le développement d'un standard de chiffrement au *National Institute of Standards and Technology* (NIST).
+
+Des réactions émotionnelles. Documents de 7 pages, texte complet du [*A Simple Statement*](https://tools.ietf.org/id/draft-thomson-perpass-statement-00.txt), par une personne importante au sein du IETF :
+
+> we had a good thing   
+> you messed it up   
+> for everyone   
+> we trusted you   
+> we were naive   
+> never again   
+
+IETF, nov. 2013, une rencontre pour des déclarations plus larges et de toute l'organisation. Session plénière, plusieurs centaines de participants, demande de supporter ou opposition à la déclaration suivante :
+
+> Pervasive surveillance is an attack, and the IETF needs to adjust our threat model to consider it when developing standards track specifications.
+
+Un fort "hum" de soutien, et un silence en matière d'opposition → consensus confirmé dans un document plus rigoureux détaillant la nature des attaques et les procédures d'atténuation des risques proposées par IETF. En particulier [RFC 7258](https://tools.ietf.org/html/rfc7258) précise que des considérations au sujet de la menace d'une surveillance intrusive (omniprésente) doit être présente dans les protocols exitants et nouveaux, mais pas une section séparée.
+
+Des individus ont également formé des groupes en réponses. ``XKeyscore`` a été publié en même temps que le IETF *meeting* à Berlin. Un groupe informel s'est rencontré là, a démarré la *mailing list* ``perpass``, forme la plus basique d'orga. à IETF, et une rencontre *BoF* (*birds of a feather*, qui a pour but de mettre en place une activité plus formelle), et un atelier (par IAB -- *Internet Architecture Board* -- et W3C) pour travailler sur le renforcement d'Internet contre la surveillance intrusive.
+
+[fig 4](figures/fig-4.gif) -- Stats d'une *mailing list* : aperçu *grossier* sur le niveau d'activité d'une communauté. La liste ``perpass`` (orange) montre une grande activité en fin 2013, en comparaison avec les autres listes. Montre que cette conversation auto-organisée démarre après les révélations Snowden et devient très active après la publication des articles sur ``XKeyscore`` et ``Bullrun`` qui décrivent des attaques spécifiques contre l'infrastructure d'Internet. Les sujets abordés dans la liste :
+
+   * *brainstorming*
+   * critique de proposition pour l'augmentation de l'utilisation du chiffrement
+   * possibilité de création d'un nouveau WG pour des standards sur la sécurité
+   * discussions sur le modèle de menace et les réponses (dont la RFC 7258)
+   * discussions sur les procédures pour évaluer *privacy*
+
+La réponse la + concrète : retournement de position en faveur du chiffrement des communications en ligne. Comprend le fait que des entreprises se mettent à chiffrer leur communication interne : par exemple *Google* se met à chiffrer les liens entre ses datacenters en réponse au programme de la NSA ``muscular``. Au niveau des protocols Internet et Web, faire en sorte que la navigation soit chiffrée. Pour le W3C, le TAG met en évidence les étapes pour passer le Web en https. L'IAB a publié une déclaration sur la confidentialité, en encourageant le chiffrement à tous les niveaux disponibles pour les nouveaux protocoles (*no new cleartext*). Les fournisseurs de navigateurs ont annoncés qu'ils ne supporteront le nouveaux protocole http/2 qu'avec des communications authentifiée et chiffrées.
+
+Les révélations Snowden montre que les attaques se font au niveau réseau, concernent donc aussi les Web APIs. Tentative de défendre l'idée de réstreindre les fonctionnalités du navigateur sensibles du point de vue de la *privacy* (p. ex les APIs pour accéder aux infos de localisation, camera et autres sensors), seulement aux pages chargées avec une connection sécurisée. Ont été débatues dans plusieurs W3C groupes. Motivations : mieux sécuriser les connections pour ces actions sensibles, mais aussi motiver les développeurs à déployer des connections plus sûres.
+
+# Tendances
+
+## Systématisation
+
+Domaine de la sécurité le montre : expérience, conseils et aide améliore la substance et le sens des évaluations. Devrait être similaire dans domaine *privacy*.
+
+IAB a tenté d'introduire [RFC 6973](https://tools.ietf.org/html/rfc6973) (*Privacy Considerations for Internet Protocols*) au moyen de tutoriels pour les directeurs des IETF WG et pour d'autres participants intéressés. Pour W3C, des individus ont créé des *checklists* similaires pour détecter les problèmes liés à la *privacy* dans les nouvelles Web APIs, ainsi que des conseils pour réduire les problèmes habituels de *privacy*, comme le [*fingerprinting*](http://w3c.github.io/fingerprinting-guidance/)
+
+> Exposure of settings and characteristics of browsers can impact user privacy by allowing for browser fingerprinting. This document defines different types of fingerprinting, considers distinct levels of mitigation for the related privacy risks and provides guidance for Web specification authors on how to balance these concerns when designing new Web features.
+
+Mais aussi d'autres propositions plus orientées "procédures", comme *Privacy Specification Assessment* : comme dans contexte gov. ou corp., décrit rôles, *workflows* et les délais pour identiifer et résoudre problèmes *privacy* au travers d'un cycle plus long pour concevoir et implémenter une spécification.
+
+Systématisation continue, pas sans difficultés. Les standards du W3C sont développés de manière tellement décentralisées, il y a eu plus de succès pour obtenir des conseils et des évaluations informelles du *Privacy Interest Group* que de développer des procédures formelles pour la *privacy* tout au long de la conception de spécifications. IEFT a un *Security Directorate*, mais le *Privacy Directorate* a été abandonné pour manque d'activité.
+
+## Intégrer *privacy* et la sécurité
+
+L'évaluation de *privacy* et sécurité se fait de plus en plus en même temps que le reste, plutôt que par des groupes ou des individus particuliers. Moins compliqué logistiquement. De plus, *privacy* et sécurité dépendent souvent des couches inférieures, le travail d'identifier les problèmes est souvent similiares d'une spec à l'autre : rationalisation du travail.
+
+Au W3C, deux groupes spécifiques : *Privacy Interest Group* et *Web Security Interest Group*. IAB remplace le *Secrutiy Program* et le *Privacy Program* avec un seul group discutant de :
+
+   * confidentialité
+   * résilience
+   * confiance
+
+Contre la menace de surveillance massive, IETF a proposé de conduire des évaluation retro- et prospectivement.
+
+## Leadership
+
+Établissement des standards au sein IETF et W3C : non hiérarchique. David Clark, in [Tao of IETF](https://www.ietf.org/tao.html) :
+
+> We reject kings, presidents and voting. We believe in rough consensus and running code.
+
+Mais, *leadership* joue un rôle important dans dev. standards techniques, et significatif pour dev de considération *privacy* et sécurité. Les interviews avec des participants IETF identifie l'autorité des *Area Directors* et du [IESG](https://www.ietf.org/iesg/) (Internet Engineering Steering Group), important pour *privacy* et sécurité dans les standards Internet. Les déclarations des orga *quasi-leadership* ont été importantes dans la réaction aux révélations Snowden.
+
+Pourtant, des individus et des orgas se sont opposés à ce *leadership*, que ce soit pour la constitution des standards ou pour le rôle de gouvernance des standards. Des intérêts multiples et contradictoires. Ex: les vendeurs de "*middleboxes*" (proxies, cache, FAI : qui sont au milieux des connexions en réseaux) [voir : [RFC 7663: IAB Workshop on Stack Evolution in a Middlebox Internet (SEMI) Report](http://www.bortzmeyer.org/7663.html)] se sont opposés aux projets de chiffrement de bout en bout, malgré le consensus apparent pour augmenter la confidentialité et le chiffrement. Des oppositions individuelles ont également été faites contre des choix par les groupes experts. Rappel la difficulté d'obtenir un consensus : il faut qu'il soit implémenté très largement pour avoir un impact.
+
+# Travail futur
+
+Améliorer l'évalutation *privacy* pour Internet et Web standards dépend de bien des personnes et orgas. Mais comprendre comment ces thèmes sont mis en applications dans les standards fondammentaux d'Internet est crucial, alors que les orgas. tentent de réagir à l'attaque par les agences de renseignement contre les standards de sécurité.
+
+Ce papier présente premiers résultats d'un travail en cours. But plus large : étudier, avec approche multi-modale et ethnographique, les pratiques qui affectent la *privacy* dans cadre d'orgas. constituant des standards pour Internet et Web : méthodes qualitatives dont entretiens semi-structurés pour 'attrapper' la diversité des participants et des parties prenantes; analyses textuelles automatiques et manuelles; et notes d'observation sur le terrain de la constitution des standards.
+
+Le contexte de la fabrique des standards dans orgas. avec beaucoup de parties prenantes, diverses, et méthode pas trop formelles et hiérarchiques, défi pour l'implémentation de la *privacy* comme but de conception (*privacy-by-design*). Ce qui en ressort pourrait bien être utile dans des contextes similaires (orgas collaboratives sans structure hiérarchique), comme le logiciel libre (open source), les institutions de la gouvernance d'Internet (notez le pluriel), etc.
+
+# Remerciements
+
+Un tas de beau monde, notamment pour "reviews", mais aussi le *U.S. Dept of Homeland Security*... :)
