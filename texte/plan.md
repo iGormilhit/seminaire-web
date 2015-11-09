@@ -67,13 +67,13 @@ date: 2015-11-09
             * réduction de ces risques
             * *checklist* pour identifier et résoudre problèmes de *privacy*
           2. RFC spécifiques *privacy* : ``geopriv`` WG (géolocalisation) : modèle de com. des données de géolocalisation (standard), avec exigence d'une politique claire d'utilisation des données, et contrôle par l'utilisateur.
-       3. *privacy* dans standards du **W3C**
+      3. *privacy* dans standards du **W3C**
           1. Pas d'exigences spécifiques comme IETF, mais nombre plus stable, env. 20%
           2. fig3 : % de TR mentionnant au moins 1x le terme
           3. P3P, DNT
           4. *reviewing for privacy* au W3C, méthode
-       3. Réactions à Snowden
-       4. Tendances
+      4. Réactions à Snowden
+      5. Tendances
    5. Importances résultats et conclusions
        1. ?
    6. Critique
