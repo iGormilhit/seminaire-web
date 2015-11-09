@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="reveal.js/css/theme/serif.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
@@ -36,24 +36,416 @@
 <section><section id="introduction" class="titleslide slide level1"><h1>Introduction</h1></section><section id="référence" class="slide level2">
 <h1>Référence</h1>
 <p>DOTY, Nick, 2015. Reviewing for Privacy in Internet and Web Standard-Setting. In : <em>2015 IEEE Security and Privacy Workshops (SPW)</em> [en ligne]. mai 2015. pp. 185‑192. Disponible à l’adresse : <a href="http://dx.doi.org/10.1109/SPW.2015.18" class="uri">http://dx.doi.org/10.1109/SPW.2015.18</a></p>
+</section><section id="structure" class="slide level2">
+<h1>Structure</h1>
+<pre><code>├── I. Introduction
+├── II. Method
+│   ├── A. Data Sources
+│   └── B. Scope
+├── III. History of Privacy and Security Reviews
+│   ├── A. IETF
+│   └── B. W3C
+├── IV. Reactions to Snowden
+├── V. Trends
+│   ├── A. Systematization 
+│   ├── B. Integrating Privacy and Security 
+│   └── C. Leadership 
+└── VI. Future Work </code></pre>
 </section><section id="nick-doty" class="slide level2">
 <h1>Nick Doty</h1>
 <ul>
 <li><a href="http://npdoty.name">npdoty.name</a></li>
 <li>Bachelor en philosophie</li>
 <li>Master en <em>Information management system</em></li>
-<li>phD en <em>Information science</em></li>
-<li><em>privacy analyst</em> pour le W3C (PING * DNT)</li>
+<li>PhD en <em>Information science</em></li>
+<li><em>privacy analyst</em> pour le W3C (<a href="http://www.w3.org/Privacy/">PING</a> - DNT)</li>
 </ul>
 </section><section id="privacy" class="slide level2">
 <h1><em>Privacy</em></h1>
 <ul>
-<li>protection contre l'immixion &gt; <a href="http://www.un.org/fr/documents/udhr/#a12">art. 12</a></li>
+<li>protection contre l'immixion, cf. <a href="http://www.un.org/fr/documents/udhr/#a12">art. 12</a></li>
 <li>contrôle par l'utilisateur</li>
-<li><em>essentially-contested concept</em></li>
-<li>pas <strong>UNE</strong> définition de la <em>privacy</em></li>
+<li><em>essentially-contested concept</em> [<a href="https://en.wikipedia.org/wiki/Essentially_contested_concept">wp</a> | <a href="https://fr.wikipedia.org/wiki/Concept_essentiellement_contest%C3%A9">wpfr</a>]</li>
+<li><strong><del>unique</del></strong> définition de la <em>privacy</em></li>
+<li>pourtant ...</li>
+</ul>
+</section><section id="sécurité" class="slide level2">
+<h1>Sécurité</h1>
+<ul>
+<li>comprend la <em>privacy</em></li>
+<li>complexe</li>
+<li>transversal</li>
+</ul>
+</section><section id="reviewing-for..." class="slide level2">
+<h1><em>Reviewing for...</em></h1>
+<ul>
+<li><em>peer review</em></li>
+<li>évaluation</li>
+</ul>
+</section><section id="standards-internet-et-web" class="slide level2">
+<h1>Standards Internet et Web</h1>
+<ul>
+<li>déterminent les fonctionnalités</li>
+<li>→ nos usages, notre sécurité, notre <em>intimité</em> en ligne</li>
+</ul>
+</section><section id="ietf-et-w3c" class="slide level2">
+<h1>IETF et W3C</h1>
+<ul>
+<li>organisations principales constituant ces standards</li>
+<li><del>les seules</del> : <a href="https://whatwg.org/">WHATWG</a>, <a href="https://www.oasis-open.org/">OASIS</a>, etc.</li>
+<li>leurs méthodes et modes de fonctionnement déterminent</li>
+<li>nos usages, notre sécurité, notre <em>intimité</em> en ligne</li>
+</ul>
+</section><section id="organisations-particulières" class="slide level2">
+<h1>Organisations particulières</h1>
+<ul>
+<li>volontariat</li>
+<li>consensus</li>
 </ul>
 </section></section>
+<section><section id="buts-de-létude" class="titleslide slide level1"><h1>Buts de l'étude</h1></section><section id="hypothèse" class="slide level2">
+<h1>Hypothèse</h1>
+<ul>
+<li>∅</li>
+</ul>
+</section><section id="alors" class="slide level2">
+<h1>Alors ?</h1>
+<ul>
+<li>Comprendre le fonctionnement des organisations</li>
+<li>Évaluer l'histoire des thèmes <em>privacy</em> et sécurité à IETF et W3C</li>
+<li>l'impact et les réactions aux <strong>révélations Snowden</strong></li>
+<li>les tendances du point de vue des méthode d'évaluation de ces thèmes</li>
+</ul>
+</section></section>
+<section><section id="méthode" class="titleslide slide level1"><h1>Méthode</h1></section><section id="analyse-textuelle" class="slide level2">
+<h1>Analyse textuelle</h1>
+<ul>
+<li><strong>automatique</strong> et manuelle</li>
+<li>RFCs, TRs, <em>mailing lists</em></li>
+<li>Actualités de médias de masse, rapports, standards en réaction à Snowden (<em>timeline</em>)</li>
+<li>Entretiens semi-structurés</li>
+</ul>
+</section><section id="rfcs" class="slide level2">
+<h1>RFCs</h1>
+<ul>
+<li>historique complet depuis 1969</li>
+<li><em>privacy</em> : notion transversale comme a11y, i18n, <em>sécurité</em></li>
+<li>standards par <em>couches</em> → déterminismes des couches de bases</li>
+<li>méthode : <em>parsing</em> du <em>plain-text</em>, repérage des sections, nbre de ligne, rapport longueur RFC / longueur section sécurité ou <em>privacy</em></li>
+</ul>
+</section><section id="trs" class="slide level2">
+<h1>TRs</h1>
+<ul>
+<li>historique plus récent, 1996</li>
+<li>analyse le % de TRs mentionnant au moins 1x le terme</li>
+</ul>
+</section></section>
+<section><section id="résultats-et-conclusions" class="titleslide slide level1"><h1>Résultats et conclusions</h1></section><section id="section" class="slide level2">
+<h1></h1>
+<figure>
+<img src="../figures/fig-1.gif" alt="figure 1" /><figcaption>figure 1</figcaption>
+</figure>
+</section><section id="historique-des-rfcs" class="slide level2">
+<h1>Historique des RFCs</h1>
+<ul>
+<li><a href="http://tools.ietf.org/html/rfc1543">RFC 1543</a>, 1993, <em>Instructions for RFC authors</em></li>
+</ul>
+<blockquote>
+<p>All RFCs are required to have a Security considerations section. Historically, such sections have been relatively weak (<a href="http://tools.ietf.org/html/rfc3552">RFC 3552</a>)</p>
+</blockquote>
+</section><section id="historique-des-rfcs-1" class="slide level2">
+<h1>Historique des RFCs</h1>
+<ul>
+<li>1996, une RFC signale que les sections sont trop courtes</li>
+<li><em>sécurité</em> quasi absentes avant 90s, existantes mais brèves ensuite</li>
+<li>dès 2000, les sections sont plus grandes, tout de même minimalistes (cf. figure 2)</li>
+<li>longueur != qualité</li>
+</ul>
+</section><section id="section-1" class="slide level2">
+<h1></h1>
+<figure>
+<img src="../figures/fig-2.gif" alt="figure 2" /><figcaption>figure 2</figcaption>
+</figure>
+</section><section id="historique-des-rfcs-2" class="slide level2">
+<h1>Historique des RFCs</h1>
+<ul>
+<li>Introduction d'un modèle, avec une section <em>Security Considerations</em></li>
+<li>Outil de validation</li>
+<li>Sections évaluées par le <em>Security Directorate</em></li>
+</ul>
+</section><section id="historique-des-rfcs-3" class="slide level2">
+<h1>Historique des RFCs</h1>
+<blockquote>
+<p>Now everyone [thinks about security]. Not everyone does, but as soon as you don't, you get called out. (entretiens semi-structurés)</p>
+</blockquote>
+<ul>
+<li>RFCs évaluées par <em>Area Directors</em>, <em>Security Area Directors</em> et IESG</li>
+<li>peuvent être rejetées, sujettes à révision</li>
+<li>évaluation pointilleuses</li>
+<li>approbation difficile à obtenir</li>
+</ul>
+</section><section id="sécurité-privacy" class="slide level2">
+<h1>Sécurité → <em>privacy</em></h1>
+<ul>
+<li>juillet 2013, <a href="http://tools.ietf.org/html/rfc6973">FRC 6973</a></li>
+<li>demande de faire la liste des menaces</li>
+<li>description des mesures de réduction des risques</li>
+<li>propose <em>checklist</em> pour identifier et résoudre les problèmes</li>
+</ul>
+</section><section id="sécurité-privacy-1" class="slide level2">
+<h1>Sécurité → <em>privacy</em></h1>
+<ul>
+<li>Existe des RFCs spécifiques à la notion de <em>privacy</em></li>
+<li><a href="http://www.ietf.org/wg/concluded/geopriv.html"><code>geopriv</code> Working Group</a></li>
+<li>modèle de communication des données de localisation</li>
+<li>exigence d'une politique claire d'utilisation des données</li>
+<li>contrôle par l'utilisateur</li>
+</ul>
+</section><section id="la-privacy-dans-les-standards-du-w3c" class="slide level2">
+<h1>La <em>privacy</em> dans les standards du W3C</h1>
+<ul>
+<li>les TRs sont publiques → analysables</li>
+<li>pas d'exigence spécifiques comme à l'IETF</li>
+<li>un nombre de TRs mentionnant les termes plus stables</li>
+<li>relativement nombreuses (~ 20 %)</li>
+</ul>
+</section><section id="section-2" class="slide level2">
+<h1></h1>
+<figure>
+<img src="../figures/fig-2.gif" alt="figure 3" /><figcaption>figure 3</figcaption>
+</figure>
+</section><section id="la-privacy-dans-les-standards-du-w3c-1" class="slide level2">
+<h1>La <em>privacy</em> dans les standards du W3C</h1>
+<ul>
+<li>au W3C, des efforts significatifs sur le thème</li>
+<li>existent des standards qui s'en occupent spécifiquement</li>
+</ul>
+</section><section id="p3p" class="slide level2">
+<h1>P3P</h1>
+<ul>
+<li><a href="http://www.w3.org/P3P/"><em>Platform for Privacy Preferences Projet</em></a></li>
+<li>Projet terminé, a eu peu de succès</li>
+<li>but : améliorer prise de conscience des pratiques des sites Web</li>
+<li>descriptions des politiques des sites Web dans des fichiers <em>machine readable</em></li>
+<li>utilisation d'un langage XML</li>
+<li>volonté de permettre une grande souplesse d'implémentation</li>
+<li>donner le contrôle à l'utilisateur</li>
+</ul>
+</section><section id="dnt" class="slide level2">
+<h1>DNT</h1>
+<ul>
+<li><a href="http://www.w3.org/TR/tracking-dnt/"><em>Do Not Track</em></a></li>
+<li>offir le choix à l'utilisateur</li>
+<li>2010 : pris en charge par <em>Federal Trade Commission</em></li>
+<li>2011 : implémentation dans les navigateurs</li>
+<li>préférence du navigateur → respectée par le site Web</li>
+<li>très souple</li>
+<li><em>Privacy Badger</em> de l'EFF</li>
+</ul>
+</section><section id="évaluation-de-la-privacy-au-w3c" class="slide level2">
+<h1>Évaluation de la <em>privacy</em> au W3C</h1>
+<ul>
+<li>le thème apparaît dans les spécifications de plusieurs APIs</li>
+<li>pas d'exigence de section dans les documents publiés...</li>
+<li>... mais dans les procédures d'évaluations</li>
+<li>charte des WG</li>
+<li>directeur du W3C</li>
+</ul>
+</section><section id="évalutation-par-le-ping" class="slide level2">
+<h1>Évalutation par le PING</h1>
+<ul>
+<li>de manière informelle, apporte son expertise</li>
+<li>PING est composé de volontaires : académiques, société civile, industrie, etc.</li>
+<li>travaille sur les procédures pour améliorer les processus d'évaluation</li>
+<li><em>Technical Architecture Group</em>, <em>Web Application Working Group</em>, <em>Web Security Interest Group</em></li>
+</ul>
+</section><section id="amélioration-du-processus" class="slide level2">
+<h1>Amélioration du processus</h1>
+<ul>
+<li>autres notions transversales : a11y, i18n...</li>
+<li>groupes spécifiques : <em>Internationalization Working Group</em>, <em>Web Accessibility Initiative</em></li>
+<li>travaillent sur les procédures</li>
+</ul>
+</section></section>
+<section><section id="réaction-aux-révélations-snowden" class="titleslide slide level1"><h1>Réaction aux révélations Snowden</h1></section><section id="révélations-snowden" class="slide level2">
+<h1>Révélations Snowden</h1>
+<ul>
+<li>juin 2013, articles de Greenwald</li>
+<li>section 215, collection des métadonnées téléphonique</li>
+<li>accès <code>Prism</code> aux serveurs des grandes compagnies technologiques</li>
+<li>programmes <code>XKeyscore</code> et <code>Bullrun</code> (chiffrement)</li>
+<li>insertion de vulnérabilité dans le développement de standards de chiffrement au NIST</li>
+</ul>
+</section><section id="types-de-réactions" class="slide level2">
+<h1>Types de réactions</h1>
+<ul>
+<li>très nombreuses, article ne propose qu'un résumé (<em>privacy</em> et sécurité)</li>
+<li>déclarations individuelles / d'organisations</li>
+<li>formations de nouveaux groupes de travail et de nouvelles collaborations</li>
+<li>réponses directes sous forme de standards et de code</li>
+</ul>
+</section><section id="réaction-émotionnelle" class="slide level2">
+<h1>Réaction émotionnelle</h1>
+<ul>
+<li>Un document de 7 pages, <a href="https://tools.ietf.org/id/draft-thomson-perpass-statement-00.txt"><em>A Simple Statement</em></a> :</li>
+</ul>
+<blockquote>
+<p>we had a good thing<br />
+you messed it up<br />
+for everyone<br />
+we trusted you<br />
+we were naive<br />
+never again</p>
+</blockquote>
+</section><section id="ietf-novembre-2013" class="slide level2">
+<h1>IETF, novembre 2013</h1>
+<blockquote>
+<p>Pervasive surveillance is an attack, and the IETF needs to adjust our thread model to consider it when developing standards track specification.</p>
+</blockquote>
+<ul>
+<li>pour ou contre ?</li>
+<li>fort consensus</li>
+<li>confirmé dans des documents plus rigoureux</li>
+<li><a href="http://tools.ietf.org/html/rfc7258">RFC 7258</a> : obligation d'aborder la menace d'une suveillance massive dans tous les protocles existants ou nouveaux</li>
+</ul>
+</section><section id="ietf-meeting-à-berlin" class="slide level2">
+<h1>IETF <em>meeting</em> à Berlin</h1>
+<ul>
+<li>en même temps que la publication de <code>XKeyscore</code></li>
+<li>création d'un groupe informel via la <em>mailing list</em> <code>perpass</code></li>
+<li><em>BoF</em> (<em>Birds of a Feather</em>) : mise en place d'une activité plus formelle</li>
+<li>un <em>workshop</em> par l'IAB et le W3C : renforcement d'Internet contre la surveillance massive</li>
+</ul>
+</section><section id="section-3" class="slide level2">
+<h1></h1>
+<figure>
+<img src="../figures/fig-4.gif" alt="figure 4" /><figcaption>figure 4</figcaption>
+</figure>
+</section><section id="la-liste-perpass" class="slide level2">
+<h1>La liste <code>perpass</code></h1>
+<ul>
+<li><em>brainstorming</em></li>
+<li>étudie une proposition pour augmenter l'utilisation du chiffrement</li>
+<li>possibilité d'un nouveau WG pour des standards sur la sécurité</li>
+<li>discussions sur un nouveau modèle de menace et les réponses possibles</li>
+<li>discussions sur les procédures pour évaluer la <em>privacy</em></li>
+</ul>
+</section><section id="chiffrement" class="slide level2">
+<h1>Chiffrement</h1>
+<ul>
+<li>réponse la plus concrête : retrounement en faveur</li>
+<li>les entreprises se mettent à chiffrer leurs communications internes</li>
+<li>Google et les transferts entre <em>datacenters</em> VS <code>muscular</code></li>
+<li>faire en sorte que la navigation soit chiffrée</li>
+<li>déclaration de l'IAB pour encourager le chiffrement à tous les niveaux</li>
+<li>→ <em>no new cleartext</em></li>
+<li>...</li>
+</ul>
+</section><section id="web-apis" class="slide level2">
+<h1>Web APIs</h1>
+<ul>
+<li>sont concernées</li>
+<li>volonté de restreindre les fonctionnalité des navigateurs si connexion non-sécurisée</li>
+<li>ex: infos de localisations, la caméra, les divers sensors du <em>smartphone</em></li>
+<li>volonté de mieux sécuriser les connexions</li>
+<li>de motiver les développeurs à déployer des connexions plus sûres</li>
+</ul>
+</section></section>
+<section><section id="tendances" class="titleslide slide level1"><h1>Tendances</h1></section><section id="systématisation" class="slide level2">
+<h1>Systématisation</h1>
+<ul>
+<li>s'inspirer du domaine de la sécurité (amélioration de l'évaluation)</li>
+<li>IAB introduit une RFC sur la <em>privacy</em> via des tutoriels</li>
+<li>au W3C, élaboration de <em>checklists</em></li>
+<li>exemple du <em>fingerprinting</em></li>
+<li>procédures, ex : <em>Privacy Specification Assessment</em></li>
+</ul>
+</section><section id="systématisation-et-décentralisation" class="slide level2">
+<h1>Systématisation et décentralisation</h1>
+<ul>
+<li>plus de succès pour le PING</li>
+<li>que pour établir des procédures formelles</li>
+<li>le <em>Privacy Directorate</em> de IETF a été abandonné</li>
+</ul>
+</section><section id="intégration" class="slide level2">
+<h1>Intégration</h1>
+<ul>
+<li>passe d'une évaluation sur demande, par groupes particuliers</li>
+<li>à une évaluation globale, comprenant la sécurité et la <em>privacy</em></li>
+<li>ces notions dépendent souvent des couches inférieures</li>
+<li>→ identification des problèmes similiaires d'une spécification à l'autre</li>
+<li>W3C : deux groupes spécifiques</li>
+<li>IAB fusionne les deux groupes : confidentialité, résilience, confiance</li>
+</ul>
+</section><section id="leadership" class="slide level2">
+<h1><em>Leadership</em></h1>
+<ul>
+<li><a href="https://www.ietf.org/tao.html">Tao of IETF</a> :</li>
+</ul>
+<blockquote>
+<p>We reject kings, presidents and voting. We believe in rough consensus and running code.</p>
+</blockquote>
+</section><section id="leadership-1" class="slide level2">
+<h1><em>Leadership</em></h1>
+<ul>
+<li>joue un rôle important</li>
+<li>les entretiens mettent en évidence des autorités reconnues :</li>
+<li><em>Area Directors</em>, IESG</li>
+<li>IETF, W3C sont des organisations avec un <em>leadership</em> certain</li>
+<li>dont les réactions aux révélation Snowden ont été importantes</li>
+</ul>
+</section><section id="leadership-2" class="slide level2">
+<h1><em>Leadership</em></h1>
+<ul>
+<li>pourtant des oppositions à la notion de <em>leadership</em></li>
+<li>les vendeurs de <em>middleboxes</em> (proxies, cache, FAI, etc.) VS chiffrement</li>
+<li>difficulté d'obtenir un consensus, besoin d'une large implémentation</li>
+</ul>
+</section></section>
+<section><section id="travail-futur" class="titleslide slide level1"><h1>Travail futur</h1></section><section id="mieux-comprendre" class="slide level2">
+<h1>Mieux comprendre</h1>
+<ul>
+<li>mieux comprendre le fonctionnement des organisations</li>
+<li>mieux comprendre la mise en application dans les standards</li>
+<li>curcial pour faire face aux attaques gouvernementales contre la sécurité</li>
+</ul>
+</section><section id="étudier-les-pratiques" class="slide level2">
+<h1>Étudier les pratiques</h1>
+<ul>
+<li>approche multi-modale</li>
+<li>qualitatives : entretien semi-structuré</li>
+<li>analyses textuelles automatiques et manuelles</li>
+<li>notes d'observation sur le terrain (ethnographie)</li>
+</ul>
+</section><section id="défi-et-élargissement" class="slide level2">
+<h1>Défi et élargissement</h1>
+<ul>
+<li>volontariat, consensus et absence de hiérarchie</li>
+<li>défi pour l'implémentation de standards pour la <em>privacy</em> et la sécurité</li>
+<li>connaissance utile pour d'autres domaines :</li>
+<li>logiciels libres, institutions de la gourvernances d'Internet, etc.</li>
+</ul>
+</section></section>
+<section><section id="importance-des-résultats" class="titleslide slide level1"><h1>Importance des résultats</h1></section><section id="amélioration-du-savoir" class="slide level2">
+<h1>Amélioration du savoir</h1>
+<ul>
+<li>comprendre comment les standards sont élaborés</li>
+<li>meilleure connaissance des organisations complexes</li>
+<li>mise en évidence d'un processus itératif et réflexif</li>
+<li>capacité de réagir à l'environnment (nécessité)</li>
+<li>pro-activité ?</li>
+</ul>
+</section></section>
+<section><section id="critique" class="titleslide slide level1"><h1>Critique</h1></section><section id="un-peu-plus-de-données" class="slide level2">
+<h1>Un peu plus de données</h1>
+<ul>
+<li>utilisation des données quantitatives pas suffisantes</li>
+<li>idem avec les données qualitatives</li>
+<li>meilleure mise en évidence des aticles tout public</li>
+<li>certainement très utile pour les participants</li>
+</ul>
+</section></section>
+<section><section id="merci" class="titleslide slide level1"><h1>Merci</h1></section></section>
     </div>
   </div>
 
@@ -65,6 +457,8 @@
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
         // Vertical centering of slides
         center: true,
 
