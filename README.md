@@ -31,5 +31,5 @@ $ git clone https://github.com/hakimel/reveal.js.git
 Pour générer les slides en ``html`` avec pandoc :
 
 ```bash
-$ pandoc -s -t revealjs -o slides.html5 slides.md
+$ pandoc -s -t revealjs -o slides.html slides.md
 ```
