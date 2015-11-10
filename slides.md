@@ -343,7 +343,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 * mieux comprendre le fonctionnement des organisations
 * mieux comprendre la mise en application dans les standards
-* curcial pour faire face aux attaques gouvernementales contre la sécurité
+* crucial pour faire face aux attaques gouvernementales contre la sécurité
 
 ## Étudier les pratiques
 
@@ -357,7 +357,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 * volontariat, consensus et absence de hiérarchie
 * défi pour l'implémentation de standards pour la *privacy* et la sécurité
 * connaissance utile pour d'autres domaines :
-* logiciels libres, institutions de la gourvernances d'Internet, etc.
+* logiciels libres, institutions de la gouvernance d'Internet, etc.
 
 # Importance des résultats
 
@@ -366,8 +366,8 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 * comprendre comment les standards sont élaborés
 * meilleure connaissance des organisations complexes
 * mise en évidence d'un processus itératif et réflexif
-* capacité de réagir à l'environnment (nécessité)
-* pro-activité ?
+* capacité de réagir à l'environnement (nécessité)
+* pro activité ?
 
 # Critique
 
@@ -375,7 +375,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 * utilisation des données quantitatives pas suffisantes
 * idem avec les données qualitatives
-* meilleure mise en évidence des aticles tout public
+* meilleure mise en évidence des articles tout public
 * certainement très utile pour les participants
 
 # Merci
