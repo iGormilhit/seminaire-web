@@ -101,7 +101,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 * historique complet depuis 1969
 * *privacy* : notion transversale comme a11y, i18n, *sécurité*
 * standards par *couches* → déterminismes des couches de bases
-* méthode : *parsing* du *plain-text*, repérage des sections, nbre de ligne, rapport longueur RFC / longueur section sécurité ou *privacy*
+* méthode : *parsing* du *plain-text*, repérage des sections, nbre de ligne, longueur section sécurité ou *privacy* / rapport longueur RFC
 
 ## TR
 
@@ -148,7 +148,7 @@ Standard-Setting. In : *2015 IEEE Security and Privacy Workshops (SPW)*
 
 ## Sécurité → *privacy*
 
-* juillet 2013, [RFC 6973](http://tools.ietf.org/html/rfc6973)
+* juillet 2013, [RFC 6973](http://tools.ietf.org/html/rfc6973) : *Privacy Considerations for Internet Protocols*
 * demande de faire la liste des menaces
 * description des mesures de réduction des risques
 * propose *checklist* pour identifier et résoudre les problèmes
